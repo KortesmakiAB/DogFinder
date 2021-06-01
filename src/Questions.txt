@@ -1,0 +1,4 @@
+Why do i have to import image urls? Why didn't a string containing the path work?
+
+Routes.js, line 16: Why does the solution code not include the word "exact" keyword?
+
