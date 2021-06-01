@@ -1,6 +1,6 @@
-import { Route, Switch, Redirect } from 'react-router-dom';
-import DogList from './DogList';
-import DogDetails from './DogDetails';
+import NavBar from './NavBar';
+import Routes from './Routes';
+import './App.css';
 
 import whiskey from "./images/whiskey.jpg";
 import tubby from "./images/tubby.jpg";
@@ -14,15 +14,10 @@ function App({ dogs }) {
 
   return (
     <>
-      <Switch>
-        <Route exact path="/dogs" >
-          <DogList dogNames={ dogs.map(d => d.name) } />
-        </Route>
-        <Route exact path="/dogs/:name" >
-          <DogDetails getDog={getDog} /> 
-        </Route>
-        <Redirect to="/dogs" />
-      </Switch>
+      <NavBar dogNames={ dogs.map(d => d.name)} />
+      <div className="App">
+        <Routes getDog={getDog} />
+      </div>
     </>
   );
 }
