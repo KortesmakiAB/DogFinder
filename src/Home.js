@@ -3,7 +3,7 @@ const Home = ({ dogNames }) => {
     
     return (
         <div>
-            <h3>Click on a dog's name above for more info!</h3>
+            <h3>Click on a dog's name above and fall in love 💖!</h3>
         </div>
     );
 };
